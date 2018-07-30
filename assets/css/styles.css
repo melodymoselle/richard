@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ------------------------------------------------------------------
+General Styles
+------------------------------------------------------------------ */
+div {
+  /*border: 1px solid red;*/
+}
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  text-transform: uppercase;
+}
+.logo {
+  width: 15%;
+  float: left;
+  padding-left: 40px;
+}
+.logo > h1 {
+}
+.nav {
+  width: 70%;
+  float: left;
+  padding-top: 20px;
+}
+.nav ul {
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+  font-weight: 600;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+.lang {
+  width: 15%;
+  float: right;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+.lang > p {
+  float: right;
+  font-weight: 900;
+}
+.lang span {
+  /*font-size: 24px;*/
+  margin: 0 2px;
+  font-weight: 200;
+}
