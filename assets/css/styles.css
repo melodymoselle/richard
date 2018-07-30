@@ -11,7 +11,7 @@ html {
 General Styles
 ------------------------------------------------------------------ */
 div {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 body {
   margin: 0;
@@ -41,7 +41,7 @@ Navigation
   width: 70%;
   float: left;
   padding-top: 20px;
-  display: none;
+  /*display: none;*/
   font-size: 14px;
 }
 .nav ul {
@@ -56,6 +56,16 @@ Navigation
 .nav li:last-child {
   margin-right: 0;
 }
+.mobile {
+  clear: left;
+  padding-top: 0px;
+}
+.mobile li {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
 .burger {
   float: right;
   padding: 32px 15px;
