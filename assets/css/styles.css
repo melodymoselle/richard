@@ -11,7 +11,7 @@ html {
 General Styles
 ------------------------------------------------------------------ */
 div {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 body {
   margin: 0;
@@ -19,6 +19,9 @@ body {
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 header {
   text-transform: uppercase;
@@ -30,10 +33,16 @@ header {
 }
 .logo > h1 {
 }
+
+/* ------------------------------------------------------------------
+Navigation
+------------------------------------------------------------------ */
 .nav {
   width: 70%;
   float: left;
   padding-top: 20px;
+  display: none;
+  font-size: 14px;
 }
 .nav ul {
   text-align: center;
@@ -47,18 +56,31 @@ header {
 .nav li:last-child {
   margin-right: 0;
 }
+.burger {
+  float: right;
+  padding: 32px 15px;
+  display: none;
+}
+.burger > div {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin: 3px 0;
+}
+
 .lang {
-  width: 15%;
+  width: 10%;
   float: right;
   padding-right: 40px;
-  padding-top: 20px;
+  padding-top: 27px;
+  font-size: 12px;
+  display: none;
 }
 .lang > p {
   float: right;
   font-weight: 900;
 }
 .lang span {
-  /*font-size: 24px;*/
   margin: 0 2px;
   font-weight: 200;
 }
