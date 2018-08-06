@@ -118,6 +118,50 @@ header {
   }
 }
 
-
+/* ------------------------------------------------------------------
+SLIDESHOW
+------------------------------------------------------------------ */
+section {
+  padding: 0 10px;
+}
+.slideshow {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+}
+.slide p {
+  margin-top: -2px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.artist {
+  font-size: 18px;
+  font-weight: 900;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+}
+.dates {
+  font-size: 16px;
+  font-weight: 500;
+}
+.city {
+  font-size: 16px;
+  font-weight: 800;
+}
+.dots {
+  float: right;
+  margin-right: 4px;
+  margin-top: -88px;
+  font-size: 12px;
+}
+.dots i {
+  cursor: pointer;
+}
 
 
