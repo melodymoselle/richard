@@ -1,11 +1,17 @@
-html {
+* {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 /* ------------------------------------------------------------------
 General Styles
@@ -14,14 +20,16 @@ div {
   /*border: 1px solid red;*/
 }
 body {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 a {
-  text-decoration: none;
+  color: black;
 }
 a:hover {
   text-decoration: underline;
+}
+figure {
+  margin: 0;
 }
 header {
   text-transform: uppercase;
@@ -37,6 +45,7 @@ header {
 /* ------------------------------------------------------------------
 Navigation
 ------------------------------------------------------------------ */
+@media (max-width: 600px) {}
 .nav {
   width: 70%;
   float: left;
@@ -67,16 +76,29 @@ Navigation
 }
 
 .burger {
+  cursor: pointer;
   float: right;
   padding: 32px 15px;
-  display: none;
+  /*display: none;*/
 }
-.burger > div {
+/*.burger > div {
   width: 25px;
   height: 5px;
   background-color: black;
   margin: 3px 0;
 }
+
+.close .burger:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.close .burger:nth-child(2) {opacity: 0;}
+
+.close .burger:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}*/
 
 .lang {
   width: 10%;
@@ -84,13 +106,37 @@ Navigation
   padding-right: 40px;
   padding-top: 27px;
   font-size: 12px;
-  display: none;
+  /*display: none;*/
 }
 .lang > p {
   float: right;
+  cursor: pointer;
   font-weight: 900;
 }
 .lang span {
   margin: 0 2px;
   font-weight: 200;
 }
+
+/* ------------------------------------------------------------------
+HOME-SlIDESHOW
+------------------------------------------------------------------ */
+.slideshow {
+  max-width: 900px;
+  margin: 0 auto;
+  display: none;
+}
+.slideshow img {
+  max-width: 900px;
+  max-height: 600px;
+  background-color: grey;
+}
+
+.artist {}
+
+
+
+
+
+
+
