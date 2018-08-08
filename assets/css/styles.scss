@@ -18,25 +18,20 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 ul {
   margin: 0;
   padding: 0;
 }
-
 li {
   list-style: none;
 }
-
 .clearfix:after {
-  content: " ";
-  /* Older browser do not support empty content */
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
-
 /* ------------------------------------------------------------------
 General Styles
 ------------------------------------------------------------------ */
@@ -51,81 +46,49 @@ header {
   text-transform: uppercase;
   padding: 0 30px;
 }
-
 .logo {
   float: left;
 }
-
 .menu-toggle {
   cursor: pointer;
   float: right;
   font-size: 26px;
   margin-top: 25px;
-  margin-right: 15px;
+  margin-right: 15px;  
   /*display: none;*/
 }
-
 .lang {
   float: right;
   font-size: 14px;
   margin-top: 19px;
   /*display: none;*/
 }
-
 .lang > p {
   float: right;
   /*cursor: pointer;*/
   font-weight: 900;
 }
-
 .lang span {
   margin: 0 4px;
   font-weight: 400;
 }
-
-.nav {  
-/*  position: absolute;
-  left: -200px;
-  top: 0;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: visible;
-  transition: left 0.3s ease,
-              box-shadow 0.3s ease;
-  z-index: 999;*/
-  /*display: none;*/
-  position: absolute;
-  top: 60px;
-  left: 0;
-  background-color: white;
-  width: 100%;
+.nav {
+  // display: none;
   float: left;
   clear: left;
   font-size: 14px;
-  padding-left: 30px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
-
 .nav li {
   margin-bottom: 10px;
-  width: 143px;
 }
-
 .nav li:first-child {
-  border-top: 1px solid black;
-  padding-top: 10px;
-  margin-top: 20px;
-}
-
-.nav li:last-child {
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .fa-bars {
   /*display: none;*/
-  display: block;
 }
-
 .fa-times {
   display: none;
 }
@@ -134,7 +97,6 @@ header {
   .fa-bars {
     display: none;
   }
-
   .nav {
     display: block;
     border: none;
@@ -142,11 +104,9 @@ header {
     margin-top: -64px;
     padding-left: 94px;
   }
-
   .nav ul {
     text-align: center;
   }
-
   .nav li {
     display: inline-block;
     margin: 0 2%;
@@ -157,82 +117,56 @@ header {
     padding-left: 0;
   }
 }
+
 /* ------------------------------------------------------------------
 CSS MENU TOGGLE
 ------------------------------------------------------------------ */
-#toggle {
-  display: none;
-}
-.toggle-icon { 
-  cursor: pointer;
-  user-select: none;
-  float: right;
-  font-size: 26px;
-  margin-top: 28px;
-  margin-right: 15px;
-}
-#toggle:checked ~ .nav {
-  display: none;
-}
-#toggle:checked ~ .toggle-icon > .fa-bars {
-  display: none;
-}
-#toggle:checked ~ .toggle-icon > .fa-times {
-  display: block;
-}
+
+
 /* ------------------------------------------------------------------
 SLIDESHOW
 ------------------------------------------------------------------ */
 section {
   padding: 0 10px;
 }
-
 .slideshow {
   max-width: 900px;
   margin: 0 auto;
 }
-
 .slide img {
   width: 100%;
   height: auto;
 }
-
 .slide p {
   margin-top: -2px;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-
 .artist {
   font-size: 18px;
   font-weight: 900;
 }
-
 .title {
   font-size: 18px;
   font-weight: 600;
   font-style: italic;
 }
-
 .dates {
   font-size: 16px;
   font-weight: 500;
 }
-
 .city {
   font-size: 16px;
   font-weight: 800;
 }
-
 .dots {
   float: right;
   margin-right: 4px;
   margin-top: -88px;
   font-size: 12px;
 }
-
 .dots i {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=styles.css.map */
+

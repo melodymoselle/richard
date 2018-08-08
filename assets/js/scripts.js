@@ -1,5 +1,8 @@
+window.onload = function() {
 
-function myFunction(x) {
-  alert("click");
-    x.classList.toggle("close");
+  document.getElementById("menu-toggle").onclick = toggle;
+}
+
+function toggle(){
+  alert("onclick Event detected!");
 }
