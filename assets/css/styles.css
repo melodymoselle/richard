@@ -14,6 +14,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 a:hover {
@@ -28,12 +29,8 @@ ul {
 li {
   list-style: none;
 }
-
-/* ------------------------------------------------------------------
-General Styles
------------------------------------------------------------------- */
-div {
-  /*border: 1px solid red;*/
+p{
+  margin: 0;
 }
 
 /* ------------------------------------------------------------------
@@ -51,16 +48,20 @@ header {
 .logo {
   float: left;
 }
+.logo h1 {
+  font-weight: 800;
+}
 
 .lang {
   float: right;
-  font-size: 14px;
-  margin-top: 19px;
+  font-size: 12px;
+  margin-top: 35px;
 }
 
 .lang > p {
   float: right;
-  font-weight: 900;
+  font-weight: 700;
+  letter-spacing: normal;
 }
 
 .lang span {
@@ -84,6 +85,7 @@ header {
 .nav li {
   margin-bottom: 10px;
   width: 143px;
+  font-weight: 400;
 }
 
 .nav li:first-child {
@@ -170,61 +172,6 @@ CSS MENU TOGGLE
 }
 
 /* ------------------------------------------------------------------
-SLIDESHOW
------------------------------------------------------------------- */
-/*section {
-  padding: 0 10px;
-}
-
-.slideshow {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-}
-
-.slide p {
-  margin-top: -2px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.artist {
-  font-size: 18px;
-  font-weight: 900;
-}
-
-.title {
-  font-size: 18px;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.dates {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.city {
-  font-size: 16px;
-  font-weight: 800;
-}
-
-.dots {
-  float: right;
-  margin-right: 4px;
-  margin-top: -88px;
-  font-size: 12px;
-}
-
-.dots i {
-  cursor: pointer;
-}
-*/
-/* ------------------------------------------------------------------
 CONTENT SECTION
 ------------------------------------------------------------------ */
 section {
@@ -234,11 +181,17 @@ section > aside > nav {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 section > aside > nav > a:active, .active {
   font-style: italic;
   font-weight: 700;
 }
+  section > article img {
+  width: 100%;
+  height: auto;
+  }
 @media (min-width: 700px) {
   section {
     max-width: 1010px;
@@ -254,10 +207,6 @@ section > aside > nav > a:active, .active {
     float: right;
     width: calc(100% - 210px);
     max-width: 800px;
-  }
-  section > article img {
-  width: 100%;
-  height: auto;
   }
 }
 .name {
@@ -286,68 +235,57 @@ section > aside > nav > a:active, .active {
 }
 
 /* ------------------------------------------------------------------
-EXHIBIT
+SLIDESHOW
 ------------------------------------------------------------------ */
-/*
-.exhibit > aside > p {
-  margin: 0;
+.dots {
+  float: right;
+  position: relative;
+  right: 5px;
+  font-size: 11px;
+  letter-spacing: 0px;
+  z-index: 100;
+}
+.artist .dots {
+  top: -45px;
+}
+.exhibit .dots {
+  top: -23px;
+}
+/* ------------------------------------------------------------------
+EXHIBIT PAGE
+------------------------------------------------------------------ */
+/*.exhibit nav {
+  float: right;
+  text-align: right;
+  margin-top: -69px;
 }*/
-/*.exhibit .artist, .title {
-  font-size: 28px;
+/* ------------------------------------------------------------------
+ARTIST PAGE
+------------------------------------------------------------------ */
+/* ------------------------------------------------------------------
+ARTIST BIO
+------------------------------------------------------------------ */
+.bio > article p {
+  margin-bottom: 5px;
+  letter-spacing: normal;
 }
-.exhibit .artist > span {
+.bio h4 {
+  margin: 10px 0 5px 0;
   text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
 }
-.exhibit .dates, .city {
-  text-transform: uppercase;
-  font-size: 16px;
+.bio-item {
+ letter-spacing: normal;
 }
-.exhibit .reception {
-  font-size: 14px;
-  letter-spacing: 1px;*/
-/*}
-.exhibit .link:first-child {
-  padding-top: 10px;
+.bio-item > div {
+  /*float: left;*/
 }
-.exhibit .link{
-  font-weight: 700;
-  cursor: pointer;
-  display: block;
-  letter-spacing: 1px;
+.bio-item > ul {
+  /*float: right;*/
+  margin-left: 45px;
+  margin-top: -22px;
 }
-.exhibit > article {
-  max-width: 900px;
-}
-.exhibit img {
-  width: 100%;
-}
-
-@media (min-width: 700px) {
-  .exhibit {
-    max-width: 1110px;
-    margin: 0 auto
-  }
-  .exhibit aside {
-    float: left;
-    max-width: 200px;
-    margin-right: 10px;
-  }
-  .exhibit article {
-    float: right;
-    width: calc(100% - 210px);
-    max-width: 900px;
-  }
-  .exhibit .dates {
-    margin-top: 20px;
-  }
-  .exhibit .reception {
-    margin-top: 15px;
-  }
-  .exhibit .link:first-child {
-    margin-top: 30px;
-  }
-}
-*/
 
 
 
