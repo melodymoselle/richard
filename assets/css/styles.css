@@ -8,6 +8,7 @@ html, body {
 
 body {
   font-family: Avenir, sans-serif;
+  letter-spacing: 2px;
 }
 
 a {
@@ -40,7 +41,11 @@ HEADER
 ------------------------------------------------------------------ */
 header {
   text-transform: uppercase;
-  padding: 0 30px;
+  padding: 0 10px;
+  height: 88px;
+  background-color: white;
+  max-width: 1010px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -51,12 +56,10 @@ header {
   float: right;
   font-size: 14px;
   margin-top: 19px;
-  /*display: none;*/
 }
 
 .lang > p {
   float: right;
-  /*cursor: pointer;*/
   font-weight: 900;
 }
 
@@ -97,7 +100,6 @@ header {
 .fa-bars {
   display: block;
 }
-
 .fa-times {
   display: none;
 }
@@ -145,7 +147,7 @@ CSS MENU TOGGLE
 
   .nav li {
     display: inline-block;
-    margin: 0 2%;
+    margin: 0 5px;
     width: auto;
     border: none;
   }
@@ -163,14 +165,14 @@ CSS MENU TOGGLE
 }
 @media (min-width: 900px) {
   .nav {
-    padding-left: 0;
+    /*padding-left: 0;*/
   }
 }
 
 /* ------------------------------------------------------------------
 SLIDESHOW
 ------------------------------------------------------------------ */
-section {
+/*section {
   padding: 0 10px;
 }
 
@@ -221,5 +223,134 @@ section {
 .dots i {
   cursor: pointer;
 }
+*/
+/* ------------------------------------------------------------------
+CONTENT SECTION
+------------------------------------------------------------------ */
+section {
+  padding: 0 10px;
+}
+section > aside > nav {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section > aside > nav > a:active, .active {
+  font-style: italic;
+  font-weight: 700;
+}
+@media (min-width: 700px) {
+  section {
+    max-width: 1010px;
+    margin: 0 auto
+  }
+  section > aside {
+    float: left;
+    max-width: 200px;
+    margin-right: 10px;
+    padding-top: 20px;
+  }
+  section > article {
+    float: right;
+    width: calc(100% - 210px);
+    max-width: 800px;
+  }
+  section > article img {
+  width: 100%;
+  height: auto;
+  }
+}
+.name {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0;
+}
+.name > span {
+  text-transform: uppercase;
+}
+.title {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+}
+.dates {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+.city {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+}
 
-/*# sourceMappingURL=styles.css.map */
+/* ------------------------------------------------------------------
+EXHIBIT
+------------------------------------------------------------------ */
+/*
+.exhibit > aside > p {
+  margin: 0;
+}*/
+/*.exhibit .artist, .title {
+  font-size: 28px;
+}
+.exhibit .artist > span {
+  text-transform: uppercase;
+}
+.exhibit .dates, .city {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.exhibit .reception {
+  font-size: 14px;
+  letter-spacing: 1px;*/
+/*}
+.exhibit .link:first-child {
+  padding-top: 10px;
+}
+.exhibit .link{
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  letter-spacing: 1px;
+}
+.exhibit > article {
+  max-width: 900px;
+}
+.exhibit img {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .exhibit {
+    max-width: 1110px;
+    margin: 0 auto
+  }
+  .exhibit aside {
+    float: left;
+    max-width: 200px;
+    margin-right: 10px;
+  }
+  .exhibit article {
+    float: right;
+    width: calc(100% - 210px);
+    max-width: 900px;
+  }
+  .exhibit .dates {
+    margin-top: 20px;
+  }
+  .exhibit .reception {
+    margin-top: 15px;
+  }
+  .exhibit .link:first-child {
+    margin-top: 30px;
+  }
+}
+*/
+
+
+
+
+
+
