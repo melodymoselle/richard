@@ -44,31 +44,26 @@ header {
   max-width: 1010px;
   margin: 0 auto;
 }
-
 .logo {
   float: left;
 }
 .logo h1 {
   font-weight: 800;
 }
-
 .lang {
   float: right;
   font-size: 12px;
   margin-top: 35px;
 }
-
 .lang > p {
   float: right;
   font-weight: 700;
   letter-spacing: normal;
 }
-
 .lang span {
   margin: 0 4px;
   font-weight: 400;
 }
-
 .nav {
   position: absolute;
   display: none;
@@ -79,13 +74,13 @@ header {
   float: left;
   clear: left;
   font-size: 14px;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .nav li {
   margin-bottom: 10px;
-  width: 143px;
-  font-weight: 400;
+  width: 156px;
+  font-weight: 500;
 }
 
 .nav li:first-child {
@@ -184,14 +179,14 @@ section > aside > nav {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-section > aside > nav > a:active, .active {
+section > aside > nav > a:target, .active {
   font-style: italic;
   font-weight: 700;
 }
-  section > article img {
-  width: 100%;
-  height: auto;
-  }
+section > article img {
+width: 100%;
+height: auto;
+}
 @media (min-width: 700px) {
   section {
     max-width: 1010px;
@@ -212,7 +207,7 @@ section > aside > nav > a:active, .active {
 .name {
   font-size: 28px;
   font-weight: 900;
-  margin: 0;
+  margin-bottom: -7px;
 }
 .name > span {
   text-transform: uppercase;
@@ -222,6 +217,7 @@ section > aside > nav > a:active, .active {
   text-transform: uppercase;
   font-weight: 600;
   font-style: italic;
+  margin-bottom: -5px;
 }
 .dates {
   text-transform: uppercase;
@@ -237,19 +233,125 @@ section > aside > nav > a:active, .active {
 /* ------------------------------------------------------------------
 SLIDESHOW
 ------------------------------------------------------------------ */
-.dots {
-  float: right;
+.home .fa-angle-left {
   position: relative;
-  right: 5px;
-  font-size: 11px;
-  letter-spacing: 0px;
-  z-index: 100;
+  top: 0;
+  left: 0;
 }
-.artist .dots {
-  top: -45px;
+.home .fa-angle-right {
+  position: relative;
+  top: 0;
+  left: 0;
 }
-.exhibit .dots {
-  top: -23px;
+/* ------------------------------------------------------------------
+HOME PAGE
+------------------------------------------------------------------ */
+.home article {
+width: 100%;
+max-width: 900px;
+margin: 0 auto;
+float: none;
+}/*
+.home .caption {
+  position: relative;
+  top: -116px;
+  left: 10px;
+}*/
+@media (min-width: 800px){
+.home .caption {
+  position: relative;
+  top: -116px;
+  left: 10px;
+}
+}
+/* ------------------------------------------------------------------
+ARTISTS LIST
+------------------------------------------------------------------ */
+.artists aside {
+  display: none;
+}
+.artists ul {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+.artists ul li, p {
+  margin-bottom: 5px;
+}
+.artists .avail {
+  margin-top: 10px;
+}
+.artists .avail li {
+  font-size: 16px;
+}
+@media (max-width: 800px){
+  .artists article {
+    float: none;
+    width: auto;
+    max-width: none;
+  }
+}
+@media (min-width: 450px) {
+  .artists ul {
+    float: left;
+    margin-right: 20px;
+  }
+
+}
+@media (min-width: 800px) {
+.artists aside {
+  display: block;
+}
+.artists  {
+  margin-top: 20px;
+}
+.artists ul {
+  float: left;
+  margin-right: 20px;
+}
+.artists article {
+  padding-left: 20px;
+}
+.artists .avail {
+  padding-left: 20px;
+}
+.artists .avail li {
+  font-size: 16px;
+}
+}
+/* ------------------------------------------------------------------
+EXHIBITIONS PAGE
+------------------------------------------------------------------ */
+.exhibitions article p {
+  margin-top: -5px;
+}
+.exhibitions span {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.exhibitions .city {
+  font-weight: 500;
+}
+.exhibitions .title {
+  font-weight: 700;
+}
+.exhibitions > article > div {
+  margin-bottom: 15px;
+}
+.exhibitions img {
+  max-width: 600px;
+}
+.past img , .news img{
+  max-width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+.past .item , .news .item {
+  display: block;
+  clear: both;
+  margin-bottom: 20px;
+  height: 200px;
 }
 /* ------------------------------------------------------------------
 EXHIBIT PAGE
@@ -286,7 +388,18 @@ ARTIST BIO
   margin-left: 45px;
   margin-top: -22px;
 }
-
+/* ------------------------------------------------------------------
+CONTACT
+------------------------------------------------------------------ */
+.contact article {
+  width: 50%;
+}
+.contact article:first-child > div {
+  float: right;
+}
+.contact article:last-child > div {
+  float: left;
+}
 
 
 
